@@ -120,11 +120,12 @@ function App() {
   return (    
       <Canvas>
         <Suspense fallback={null}>
-          <ambientLight intensity={0.1}/>
+          <ambientLight intensity={0.06}/>
           <pointLight 
             color="#f6f3ea" 
-            position={[20, 0, 2.2]} 
-            intensity={3} 
+            position={[20,0, 10]} 
+            intensity={3}
+            shadow={true}
           />
               
           <Box position={[0, 0, 0]} />
